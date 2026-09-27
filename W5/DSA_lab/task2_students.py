@@ -50,13 +50,12 @@ print("everybody qualifies:", everybody_stack)
 reused = {"Vanna": 50, "Vanna": 90}
 print("reused key dict:", reused)
 
-"""Marks of 74, 75, and 76 test the qualification boundary:
-74 does not qualify, while 75 and 76 qualify because the condition is score >= 75.
+"""
+- Why is 75 an important test?: 
 75 is important because it checks whether the boundary value is included
 (a mistake like > instead of >= would only show up with exactly 75).
 
-With an empty dictionary, the loop has no students to process, so the stack stays empty.
-Nobody qualifies when all marks are below 75. Everybody qualifies when all marks are 75 or higher.
+What happens when a dictionary key is reused?
 
 Dictionary keys must be unique. If a key is reused, its old value is replaced by the new value;
 it does not create a second entry."""
