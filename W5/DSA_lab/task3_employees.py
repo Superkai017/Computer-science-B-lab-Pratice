@@ -121,8 +121,10 @@ empty = EmployeeList()
 print("Empty all_employees:", empty.all_employees())
 print("Empty search 101:", empty.search_employee(101))
 print("Empty remove 101:", empty.remove_employee(101))
-
-# Removing a middle node: only the previous node's next link changes.
-# It is set to skip the removed node and point at the node after it (101.next -> 103).
-# Search knows it reached the end when current becomes None,
-# because the last node's next is None.
+# Question 1: which link changes when you remove a middle node?
+ #the previous node's next link changes. 
+ # It skips the removed node and
+ # points to the node after it.
+#Question 2: how does search know it reached the end?
+ #the search stops when current becomes None. The last node's next is None, 
+ # so reaching None means there are no more nodes to check.
